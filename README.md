@@ -14,16 +14,14 @@ if you use this module. The reason is this: if you use javascript to
 insert a script element into the DOM, those browsers will load it 
 asynchronously. Only Opera and pre-Firefox 4 don't do this. 
 
-EXAMPLE 1: 
-Loading a script.
+EXAMPLE 1: Loading a script.
 ----------------------------------------------
  
 This will load a script called 'myscript.js':
 
     loader.load('myscript.js'); 
 
-EXAMPLE 2: 
-Loading a script then executing a function.
+EXAMPLE 2: Loading a script then executing a function.
 ----------------------------------------------
 
 First, define a function called ready():
