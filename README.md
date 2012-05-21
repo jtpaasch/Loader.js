@@ -3,7 +3,7 @@ Loader.js
 
 A simple, non-blocking javascript loader. 
 
-Note: this module uses the script.async attribute (see line 30), which 
+Note: this module uses the script.async attribute (see line 15), which 
 tells the browser to load the script asynchronously. Most modern browsers
 support this async functionality, but those that don't will simply 
 overlook it without causing problems. 
