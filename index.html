@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Loader test</title>
+	</head>
+	<body>
+		<h2>Loader test</h2>
+		<p>Loading a javascript file asynchronously.</p>
+
+		<script>
+			var loader=loader||function(){return{load:function(c,b){var a=document.createElement("script");a.async=!0;a.setAttribute("src",c);a.onreadystatechange=function(){if("loaded"===a.readyState||"complete"===a.readyState)a.onreadystatechange=null,void 0!==b&&b(c)};a.onload=function(){void 0!==b&&b(c)};document.body.insertBefore(a,null)}}}();
+
+			loader.load('js/myscript.js');
+		</script>
+	</body>
+</html>
